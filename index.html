@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMIÈRE — Kanjivaram Silk House</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;600&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">
+    <span style="animation-delay:0s">L</span><span style="animation-delay:.05s">U</span><span style="animation-delay:.1s">M</span><span style="animation-delay:.15s">I</span><span style="animation-delay:.2s">È</span><span style="animation-delay:.25s">R</span><span style="animation-delay:.3s">E</span>
+  </div>
+  <div class="loader-line"></div>
+  <div class="loader-sub">Kanjivaram Silk Collection 2025</div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/916374948067" target="_blank" class="wa-float" rel="noopener">
+  <div class="wa-float-pulse"></div>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Chat on WhatsApp
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">LUMIÈRE</a>
+  <ul class="nav-links">
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#process">Atelier</a></li>
+    <li><a href="#newsletter">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="cart-btn" class="nav-cart-btn" aria-label="Open cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span id="cart-count" class="cart-count">0</span>
+    </button>
+    <a href="https://wa.me/916374948067" target="_blank" class="nav-whatsapp" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="scene" class="hero-bg-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Kanchipuram Silk Heritage · Tiruppur, Tamil Nadu · 2025</div>
+    <h1 class="hero-title">Silks of the<br>South</h1>
+    <p class="hero-sub">Handwoven Kanjivaram, Half Sarees &amp; Bridal Silk</p>
+    <div class="hero-cta">
+      <a href="#collections" class="btn-primary"><span>Explore Collection</span></a>
+      <a href="https://wa.me/916374948067?text=Hi%20LUMI%C3%88RE!%20I%20would%20like%20to%20enquire%20about%20your%20collection." target="_blank" class="btn-whatsapp-hero" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Enquire Now
+      </a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item">Kanjivaram Silk <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Bridal Silk Sarees <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Pattu Pavadai <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Temple Jewellery <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Chettinad Cotton <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Handloom Weaves <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Kanjivaram Silk <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Bridal Silk Sarees <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Pattu Pavadai <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Temple Jewellery <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Chettinad Cotton <div class="marquee-dot"></div></div>
+    <div class="marquee-item">Handloom Weaves <div class="marquee-dot"></div></div>
+  </div>
+</div>
+
+<!-- COLLECTIONS / SHOP -->
+<section id="collections">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">2025 Collections</div>
+      <h2 class="section-title">Our Curated<br>Collections</h2>
+    </div>
+    <button class="section-link" onclick="document.getElementById('cart-btn').click()">View Bag →</button>
+  </div>
+
+  <div class="collection-tabs reveal">
+    <button class="tab-btn active" onclick="setCategory('all', this)">All</button>
+    <button class="tab-btn" onclick="setCategory('saree', this)">Kanjivaram Sarees</button>
+    <button class="tab-btn" onclick="setCategory('bridal', this)">Bridal Silk</button>
+    <button class="tab-btn" onclick="setCategory('halfsaree', this)">Half Sarees</button>
+    <button class="tab-btn" onclick="setCategory('salwar', this)">Salwar &amp; Anarkali</button>
+    <button class="tab-btn" onclick="setCategory('fusion', this)">Fusion Wear</button>
+  </div>
+
+  <div class="toolbar reveal">
+    <div class="result-count" id="result-count">15 pieces</div>
+    <div class="toolbar-controls">
+      <input type="text" class="search-input" id="search-input" placeholder="Search pieces...">
+      <select class="sort-select" id="sort-select">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name">Name: A–Z</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="collections-grid" id="product-grid"></div>
+</section>
+
+<!-- FEATURED -->
+<section id="featured">
+  <div class="featured-inner">
+    <div class="featured-image-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1610189026205-27510cfc52f8?w=800&q=80&auto=format&fit=crop" alt="Featured Kanjivaram Collection" style="width:100%;height:600px;object-fit:cover;display:block;">
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="featured-badge">New Arrival</div>
+      <h2 class="featured-title">The Kanchipuram<br>Wedding Edit 2025</h2>
+      <p class="featured-desc">Each saree in this edit is hand-loomed by weaver families in and around Kanchipuram, using the traditional Korvai technique to interlock body and border in pure mulberry silk with genuine zari. From everyday Chettinad cotton to full bridal Kanjivaram, every piece is woven, not printed.</p>
+      <div class="featured-cta">
+        <a href="#collections" class="btn-primary"><span>Explore Collection</span></a>
+        <a href="https://wa.me/916374948067?text=I%20want%20to%20know%20more%20about%20the%20Kanchipuram%20Wedding%20Edit%202025" target="_blank" class="btn-whatsapp-hero">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat reveal"><div class="stat-num">2010</div><div class="stat-label">Est. Since</div></div>
+  <div class="stat reveal reveal-delay-1"><div class="stat-num">5000+</div><div class="stat-label">Happy Clients</div></div>
+  <div class="stat reveal reveal-delay-2"><div class="stat-num">200+</div><div class="stat-label">Handloom Sarees</div></div>
+  <div class="stat reveal reveal-delay-3"><div class="stat-num">98%</div><div class="stat-label">Satisfaction</div></div>
+</div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">Our Craft</div>
+      <h2 class="section-title">The Art of<br>Creation</h2>
+    </div>
+  </div>
+  <div class="process-grid">
+    <div class="process-card reveal">
+      <div class="process-num">01</div>
+      <svg class="process-icon" viewBox="0 0 50 50" fill="none">
+        <circle cx="25" cy="25" r="20" stroke="#b8913a" stroke-width="0.5" opacity="0.4"/>
+        <path d="M15 25 C15 15 35 15 35 25 C35 35 15 35 15 25" stroke="#b8913a" stroke-width="1" fill="none"/>
+        <circle cx="25" cy="25" r="3" fill="#b8913a" opacity="0.6"/>
+      </svg>
+      <h3 class="process-title">Yarn &amp; Zari Selection</h3>
+      <p class="process-text">Every saree begins with pure mulberry silk yarn and genuine zari — silver thread dipped in gold — sourced the way Kanchipuram weavers have for generations.</p>
+    </div>
+    <div class="process-card reveal reveal-delay-1">
+      <div class="process-num">02</div>
+      <svg class="process-icon" viewBox="0 0 50 50" fill="none">
+        <rect x="10" y="10" width="30" height="30" stroke="#b8913a" stroke-width="0.5" opacity="0.4"/>
+        <path d="M10 25 L40 25 M25 10 L25 40" stroke="#b8913a" stroke-width="0.8"/>
+        <circle cx="25" cy="25" r="5" stroke="#b8913a" stroke-width="1" fill="none"/>
+      </svg>
+      <h3 class="process-title">Korvai Handloom Weaving</h3>
+      <p class="process-text">The body and contrast border are woven separately and interlocked by hand on the loom — the ancient Korvai technique that gives a genuine Kanjivaram its telltale reversible border.</p>
+    </div>
+    <div class="process-card reveal reveal-delay-2">
+      <div class="process-num">03</div>
+      <svg class="process-icon" viewBox="0 0 50 50" fill="none">
+        <path d="M10 40 Q25 10 40 40" stroke="#b8913a" stroke-width="1" fill="none"/>
+        <circle cx="10" cy="40" r="2" fill="#b8913a"/>
+        <circle cx="40" cy="40" r="2" fill="#b8913a"/>
+        <circle cx="25" cy="20" r="2" fill="#b8913a" opacity="0.5"/>
+      </svg>
+      <h3 class="process-title">Pallu &amp; Border Finishing</h3>
+      <p class="process-text">The pallu is woven last and finished by hand — checked for weave density, motif alignment, and zari purity before it ever reaches your hands.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label reveal" style="text-align:center">What They Say</div>
+  <div class="testimonial active">
+    <p class="testimonial-text">"LUMIÈRE transformed my wedding into a dream. My bridal lehenga was beyond anything I imagined — every stitch was pure poetry."</p>
+    <div class="testimonial-author">— Priya S., Chennai</div>
+  </div>
+  <div class="testimonial">
+    <p class="testimonial-text">"The moment I put on my LUMIÈRE Anarkali, I understood what fashion truly means. It is armour, art, and emotion at once."</p>
+    <div class="testimonial-author">— Meera R., Coimbatore</div>
+  </div>
+  <div class="testimonial">
+    <p class="testimonial-text">"Three occasions later and my LUMIÈRE saree still makes people stop me wherever I go. Timeless was not a word until I found this boutique."</p>
+    <div class="testimonial-author">— Anjali W., Bangalore</div>
+  </div>
+  <div class="testimonial-dots">
+    <button class="t-dot active" data-idx="0"></button>
+    <button class="t-dot" data-idx="1"></button>
+    <button class="t-dot" data-idx="2"></button>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="section-label reveal" style="text-align:center">Stay Connected</div>
+  <h2 class="section-title reveal" style="text-align:center">Join the<br>LUMIÈRE Circle</h2>
+  <p class="reveal" style="color:var(--muted);font-size:.85rem;margin-top:1rem;line-height:1.8;text-align:center;">Receive exclusive access to new collections, festive offers, and personal styling sessions — straight to your inbox.</p>
+  <div class="newsletter-form reveal">
+    <input class="newsletter-input" type="email" placeholder="Your email address" id="newsletter-email">
+    <button class="newsletter-btn" onclick="if(document.getElementById('newsletter-email').value){showToast('Thank you for subscribing!');document.getElementById('newsletter-email').value='';}else{showToast('Please enter your email');}">Subscribe</button>
+  </div>
+  <div style="text-align:center;margin-top:2rem;" class="reveal">
+    <p style="font-size:0.75rem;color:var(--muted);margin-bottom:1rem;letter-spacing:0.1em;">Or reach us directly on WhatsApp</p>
+    <a href="https://wa.me/916374948067?text=Hi%20LUMI%C3%88RE!%20I%20want%20to%20learn%20more%20about%20your%20collections." target="_blank" style="display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:white;padding:0.9rem 2.5rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;transition:background 0.3s;border-radius:2rem;" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      +91 63749 48067
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">LUMIÈRE</div>
+    <p class="footer-tagline">Where artistry meets<br>the extraordinary.</p>
+    <a href="https://wa.me/916374948067" target="_blank" class="footer-wa" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      +91 63749 48067
+    </a>
+  </div>
+  <div class="footer-col">
+    <h4>Maison</h4>
+    <a href="#">Our Story</a>
+    <a href="#">Atelier</a>
+    <a href="#">Artisans</a>
+    <a href="#">Sustainability</a>
+  </div>
+  <div class="footer-col">
+    <h4>Collections</h4>
+    <a onclick="setCategory('saree', document.querySelector('.tab-btn'));document.getElementById('collections').scrollIntoView({behavior:'smooth'});">Kanjivaram Sarees</a>
+    <a onclick="setCategory('bridal', document.querySelector('.tab-btn'));document.getElementById('collections').scrollIntoView({behavior:'smooth'});">Bridal Silk</a>
+    <a onclick="setCategory('halfsaree', document.querySelector('.tab-btn'));document.getElementById('collections').scrollIntoView({behavior:'smooth'});">Half Sarees</a>
+    <a onclick="setCategory('salwar', document.querySelector('.tab-btn'));document.getElementById('collections').scrollIntoView({behavior:'smooth'});">Salwar &amp; Anarkali</a>
+    <a onclick="setCategory('fusion', document.querySelector('.tab-btn'));document.getElementById('collections').scrollIntoView({behavior:'smooth'});">Fusion Wear</a>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <a href="https://wa.me/916374948067" target="_blank" rel="noopener">WhatsApp Us</a>
+    <a href="#">Personal Styling</a>
+    <a href="#">Bespoke Tailoring</a>
+    <a href="#">Store Visit</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 Maison LUMIÈRE. All rights reserved.</p>
+  <p>Crafted with passion in Tiruppur</p>
+</div>
+
+<!-- ================= ECOMMERCE OVERLAYS ================= -->
+
+<!-- Shared backdrop -->
+<div id="overlay" class="overlay-backdrop"></div>
+
+<!-- CART DRAWER -->
+<div id="cart-drawer">
+  <div class="cart-header">
+    <h3>Your Bag</h3>
+    <button id="cart-close" class="cart-close" aria-label="Close cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer" id="cart-footer">
+    <div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+    <button class="btn-checkout" id="checkout-btn">Checkout via WhatsApp</button>
+    <button class="btn-clear-cart" id="clear-cart-btn">Clear bag</button>
+  </div>
+</div>
+
+<!-- QUICK VIEW MODAL -->
+<div id="quickview-modal" class="modal-box">
+  <button class="modal-close" data-close-modal="quickview-modal" style="position:absolute;top:1.2rem;right:1.2rem;z-index:5;" aria-label="Close">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div id="quickview-body">
+    <div id="qv-img-wrap"><img id="qv-img" src="" alt=""></div>
+    <div class="qv-details">
+      <div class="qv-label" id="qv-label"></div>
+      <h3 class="qv-name" id="qv-name"></h3>
+      <div class="qv-price" id="qv-price"></div>
+      <p class="qv-desc" id="qv-desc"></p>
+      <div class="qv-row">
+        <div class="qty-stepper">
+          <button id="qv-qty-minus" aria-label="Decrease quantity">−</button>
+          <span id="qv-qty">1</span>
+          <button id="qv-qty-plus" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <div class="qv-actions">
+        <button class="btn-add-cart" id="qv-add-cart">Add to Bag</button>
+        <a href="#" id="qv-wa-link" target="_blank" rel="noopener" class="btn-whatsapp-hero" style="justify-content:center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enquire on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkout-modal" class="modal-box small">
+  <button class="modal-close" data-close-modal="checkout-modal" style="position:absolute;top:1.2rem;right:1.2rem;z-index:5;" aria-label="Close">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="checkout-body">
+    <h3>Complete Your Order</h3>
+    <p class="checkout-sub">We'll open WhatsApp with your order details pre-filled — just hit send to confirm with our team.</p>
+    <div class="checkout-summary" id="checkout-summary"></div>
+    <form id="checkout-form">
+      <div class="form-group">
+        <label for="chk-name">Full Name</label>
+        <input type="text" id="chk-name" required placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="chk-phone">Phone Number</label>
+        <input type="tel" id="chk-phone" required placeholder="+91 XXXXX XXXXX">
+      </div>
+      <div class="form-group">
+        <label for="chk-address">Delivery Address (optional)</label>
+        <textarea id="chk-address" placeholder="Street, city, PIN code"></textarea>
+      </div>
+      <button type="submit" class="btn-checkout">Send Order on WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
